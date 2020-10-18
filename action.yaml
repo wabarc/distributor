@@ -1,0 +1,21 @@
+name: 'Wayback Archiver Distributor'
+description: 'Distribute webpages from Telegram channel, etc.'
+runs: 
+  using: 'docker'
+  image: 'Dockerfile'
+inputs:
+  GITHUB_TOKEN:
+    description: 'GITHUB_TOKEN' 
+    required: true
+  DISTRIBUTE_TOKEN:
+    description: 'DISTRIBUTE_TOKEN' 
+    required: false
+  DISTRIBUTE_OWNER:
+    description: 'DISTRIBUTE_OWNER' 
+    required: true
+  DISTRIBUTE_REPO:
+    description: 'DISTRIBUTE_REPO' 
+    required: true
+  DISTRIBUTE_CHANNEL:
+    description: 'DISTRIBUTE_CHANNEL' 
+    required: true
