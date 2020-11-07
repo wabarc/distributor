@@ -29,7 +29,7 @@ Webpages soruce, telegram channel name.
 Using current GitHub account to storing data, it require add all the [required](./README.md#configurations) configs to Secrets.
 
 ```yaml
-- uses: wabarc/distributor@master
+- uses: wabarc/distributor@main
   env:
     DISTRIBUTE_TOKEN: ${{ secrets.DISTRIBUTE_TOKEN }}
     DISTRIBUTE_OWNER: ${{ secrets.DISTRIBUTE_OWNER }}
@@ -40,7 +40,7 @@ Using current GitHub account to storing data, it require add all the [required](
 Using current GitHub account to storing data, it only require add `DISTRIBUTE_CHANNEL` to Secrets.
 
 ```yaml
-- uses: wabarc/distributor@master
+- uses: wabarc/distributor@main
   env:
     DISTRIBUTE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     DISTRIBUTE_CHANNEL: ${{ secrets.DISTRIBUTE_CHANNEL }}
@@ -48,4 +48,4 @@ Using current GitHub account to storing data, it only require add `DISTRIBUTE_CH
 
 ## License
 
-This software is released under the terms of the MIT. See the [LICENSE](https://github.com/wabarc/distributor/blob/master/LICENSE) file for details.
+This software is released under the terms of the MIT. See the [LICENSE](https://github.com/wabarc/distributor/blob/main/LICENSE) file for details.
