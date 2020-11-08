@@ -13,6 +13,7 @@ inputs:
   DISTRIBUTE_TOKEN:
     description: 'GitHub account authentication token for storing webpages.'
     required: true
+    default: ${{ github.token }}
   DISTRIBUTE_OWNER:
     description: 'GitHub account username for storing webpages.'
     required: false
@@ -22,3 +23,11 @@ inputs:
   DISTRIBUTE_CHANNEL:
     description: 'Webpages soruce, telegram channel name.'
     required: true
+  DISTRIBUTE_LIMIT:
+    description: 'Limit fetch message one times.'
+    required: false
+    default: 20
+  DISTRIBUTE_CMD:
+    description: 'Distribute command, supports: github, duty-machine'
+    required: false
+    default: 'github'
