@@ -1,6 +1,6 @@
 # distributor
 
-Read this in other languages: English | [简体中文](./README_zh-CN.md)
+Read this in other languages: English | [简体中文](./README.zh-CN.md)
 
 GitHub Actions for automated distribute archived webpages.
 
@@ -24,9 +24,15 @@ GitHub repository name for storing webpages.
 
 Webpages soruce, telegram channel name.
 
+#### DISTRIBUTE_LIMIT (optional)
+
+Limit the number of messages to fetching at one time.
+
+#### DISTRIBUTE_CMD (default: github)
+
 ## Example
 
-Using current GitHub account to storing data, it require add all the [required](./README.md#configurations) configs to Secrets.
+Using current GitHub account to storing data, it require add all the [required](#configurations) configs to Secrets.
 
 ```yaml
 - uses: wabarc/distributor@main
@@ -45,6 +51,8 @@ Using current GitHub account to storing data, it only require add `DISTRIBUTE_CH
     DISTRIBUTE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     DISTRIBUTE_CHANNEL: ${{ secrets.DISTRIBUTE_CHANNEL }}
 ```
+
+For more details, see [wabarc/broker](https://github.com/wabarc/broker).
 
 ## License
 
