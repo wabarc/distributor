@@ -1,4 +1,4 @@
-FROM node:12-alpine
+FROM ghcr.io/wabarc/broker
 
 LABEL version="0.0.1"
 LABEL repository="http://github.com/wabarc/distributor"
@@ -12,7 +12,5 @@ LABEL com.github.actions.color="red"
 
 COPY entrypoint.sh /
 RUN chmod +x /entrypoint.sh
-
-RUN yarn global add @wabarc/broker
 
 ENTRYPOINT ["/entrypoint.sh"]
